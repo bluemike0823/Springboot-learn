@@ -1,0 +1,58 @@
+# ===================================================================
+# Spring Boot configuration.
+#
+# This configuration will be overridden by the Spring profile you use,
+# for example application-dev.yml if you use the "dev" profile.
+#
+# More information on profiles: https://www.jhipster.tech/profiles/
+# More information on configuration properties: https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+spring:
+  application:
+    name: FubonCMSAdmin
+  profiles:
+    # The commented value for `active` can be replaced with valid Spring profiles to load.
+    # Otherwise, it will be filled in by gradle when building the WAR file
+    # Either way, it can be overridden by `--spring.profiles.active` value passed in the commandline or `-Dspring.profiles.active` set in `JAVA_OPTS`
+    active: #spring.profiles.active#
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css, text/javascript, application/javascript, application/json, application/xml
+    min-response-size: 2048
+
+# ===================================================================
+# Application specific properties
+# Add your own application properties here, see the ApplicationProperties class
+# to have type-safe configuration, like in the JHipsterProperties above
+#
+# More documentation is available at:
+# https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+application:
+#  async:
+#    core-pool-size: 2 # Initial async pool size
+#    max-pool-size: 50 # Maximum async pool size
+#    queue-capacity: 10000 # Queue capacity of theasync pool
+#  cors:
+#    allowed-origins: "*"
+#    allowed-methods: "*"
+#    allowed-headers: "*"
+#    exposed-headers: "Authorization"
+#    allow-credentials: true
+#    max-age: 1800
+#  swagger-enabled: false
+#  allow-origin-enabled: false
+#  skip-review-texts-images: true
